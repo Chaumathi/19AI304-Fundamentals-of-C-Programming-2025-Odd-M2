@@ -15,7 +15,7 @@
   
   The program should display the average marks up to two decimal places and the corresponding grade. 
   
-# Date : 
+# Date : 19-11-2025
 # Aim:
  To build a C program that receives inputs for a student’s marks in three subjects, calculates the average, and determines the grade using nested if-else statements with safe floating-point comparisons.
 # Algorithm:
@@ -56,7 +56,27 @@
 ### Step 11:
   Stop
 # Program:
+```
+#include<stdio.h>
+int main(){
+    float math,science,english,average;
+    printf("Enter marks for Math, Science and English: ");
+    scanf("%f %f %f",&math,&science,&english);
+    average=(math+science+english)/3.0f;
+    if(average>=90.0f)
+        printf("Grade A\n");
+    else if(average>=75.0f)
+        printf("Grade B\n");
+    else if(average>=50.0f)
+        printf("Grade C\n");
+    else
+        printf("Grade F\n");
+    return 0;
+}
+```
 # Output:
+<img width="650" height="261" alt="image" src="https://github.com/user-attachments/assets/3fdbdf46-0d00-4021-9d3a-3efab70055bb" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -64,7 +84,7 @@ Thus, the program was implemented and executed successfully, and the required ou
 # IAPR-2- Module 2 - FoC
 # Ex.No:7
   Develop a C program to display the multiplication table of a given number (15) up to 10.
-# Date : 
+# Date : 18-11-2025
 # Aim:
  To develop a C program that prints the multiplication table of the number 15 up to 10 using a for loop.
 # Algorithm:
@@ -88,7 +108,19 @@ Thus, the program was implemented and executed successfully, and the required ou
   Stop
 
 # Program:
+```
+#include<stdio.h>
+int main(){
+    int number=15,i;
+    for(i=1;i<=10;i++){
+        printf("%d x %d = %d\n",number,i,number*i);
+    }
+    return 0;
+}
+```
 # Output:
+<img width="661" height="491" alt="image" src="https://github.com/user-attachments/assets/9b173ec9-85d3-476e-acd4-27986e763eca" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
